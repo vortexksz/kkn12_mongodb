@@ -8,7 +8,7 @@
 //3. gunakan mongoshell untuk membuat data base
 
 
-//memilih database
+//DATABASE
 show databases //menampilkan semua database
 
 use sekolah // memilih database sekolah
