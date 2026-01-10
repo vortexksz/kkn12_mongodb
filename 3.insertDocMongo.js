@@ -4,6 +4,21 @@ db.customers.insertOne({
     name: "killer bee"
 })
 
+db.customers.insertOne({
+    name: "bayu"
+})
+
+db.customers.insertOne({
+    _id: "sunagakure",
+    name: "gaara",
+    detail: {
+        status: "kage",
+        bijuu: "one-tails"
+    }
+})
+
+
+
 
 db.menu_makan.insertMany([
     {

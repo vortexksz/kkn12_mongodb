@@ -8,7 +8,7 @@ db.customers.find({_id: "kumogakure"})
 
 db.menu_makan.find({_id: 005})
 
-db.pesanan.find({total: 40000})
+db.pesanan.find({total: 35000})
 
 
 //comparison operator
@@ -82,6 +82,10 @@ db.menu_makan.find({
   price: { $type: "long" }
 })
 
+db.customers.find({
+    detail: { $exists: true }
+})
+
 
 //UPDATE
 db.updateOne() //mengubah 1 dokumen
@@ -139,8 +143,16 @@ db.menu_makan.updateOne(
 db.menu_makan.updateOne(
     { _id: 003 }, 
     {
-        $rename: {"name": "juice"}
+        $rename: {name: "juice"}
     }
+)
+
+db.menu_makan.updateOne(
+    { _id: 004},
+    {
+        $rename: {"es campur": "soda"}
+    }
+
 )
 
 db.menu_makan.updateMany(
@@ -209,4 +221,10 @@ db.customers.insertOne({
 db.customers.deleteOne({
     _id: "ormas"
 })
+
+db.menu_makan.deleteMany(
+    {
+        category: "drink"
+    }
+)
 
