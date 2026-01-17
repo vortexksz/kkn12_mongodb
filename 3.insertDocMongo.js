@@ -44,30 +44,6 @@ db.menu_makan.insertMany([
         name: "es campur",
         price: new NumberLong("20000"),
         category: "drink"
-    },
-    {
-        _id: 005,
-        name: "piscok",
-        price: new NumberLong("25000"),
-        category: "snack"
-    },
-    {
-        _id: 006,
-        name: "ayam pop sejati",
-        price: new NumberLong("30000"),
-        category: "main course"
-    },
-    {
-        _id: 007,
-        name: "nasi goreng sifud",
-        price: new NumberLong("35000"),
-        category: "main course"
-    },
-    {
-        _id: 008,
-        name: "sosis solo",
-        price: new NumberLong("5000"),
-        category: "snack"
     }
 ])
 
