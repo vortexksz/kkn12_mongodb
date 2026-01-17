@@ -6,9 +6,9 @@ db.<nama collection>.find(query) //menampilkan document sesuai kondisi
 //contoh query
 db.customers.find({_id: "kumogakure"})
 
-db.menu_makan.find({_id: 005})
+db.menu_makan.find({_id: 003})
 
-db.pesanan.find({total: 35000})
+db.pesanan.find({total: 70000})
 
 
 //comparison operator
